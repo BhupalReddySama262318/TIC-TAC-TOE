@@ -32,6 +32,7 @@ boxes.forEach((box) => {
     box.addEventListener("click", () => {
         if(turnO){
             box.innerText = "O";
+            box.classList.add("change");
             turnO = false;
         }else{
             box.innerText = "X";

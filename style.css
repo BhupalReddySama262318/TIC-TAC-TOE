@@ -77,7 +77,7 @@ body{
     display: none;
 }
 
-.winner{
-    justify-content: center;
-    align-items: center;
+.change{
+    color: green;
 }
+
