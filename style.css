@@ -80,7 +80,6 @@ body{
 .change{
     color: green;
 } */
-
 * {
     margin: 0;
     padding: 0;
@@ -107,16 +106,16 @@ body {
 .game {
     width: 80%;
     max-width: 60vmin;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
     gap: 1.5vmin;
+    justify-items: center;
+    align-items: center;
 }
 
 .box {
-    height: calc((100% - 5vmin) / 3); /* Calculate height for 3 boxes in a row */
-    width: calc((100% - 5vmin) / 3); /* Calculate width for 3 boxes in a row */
+    height: 18vmin; /* Adjust box height */
+    width: 18vmin; /* Adjust box width */
     border-radius: 1rem;
     border: none;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
@@ -172,9 +171,9 @@ body {
     }
 
     .box {
-        height: calc((100% - 3vmin) / 3); /* Adjust height calculation for smaller screens */
-        width: calc((100% - 3vmin) / 3); /* Adjust width calculation for smaller screens */
-        font-size: 6vmin; /* Adjust font size for smaller screens */
+        height: 12vmin; /* Adjust box height for smaller screens */
+        width: 12vmin; /* Adjust box width for smaller screens */
+        font-size: 5vmin; /* Adjust font size for smaller screens */
     }
 
     #msg {
@@ -188,8 +187,8 @@ body {
     }
 
     .box {
-        height: calc((100% - 1vmin) / 3); /* Further adjust height calculation for very small screens */
-        width: calc((100% - 1vmin) / 3); /* Further adjust width calculation for very small screens */
+        height: 10vmin; /* Further adjust box height for very small screens */
+        width: 10vmin; /* Further adjust box width for very small screens */
         font-size: 4vmin; /* Further adjust font size for very small screens */
     }
 
@@ -203,3 +202,4 @@ body {
         padding: 0.5rem 1rem;
     }
 }
+
