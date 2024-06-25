@@ -85,29 +85,3 @@ h1{
     color: green;
 } 
 
-@media (max-width: 480px) {
-    .game {
-        max-width: 100%; /* Adjust max-width to fill entire viewport on very small screens */
-        grid-gap: 3px; /* Further adjust gap between grid items for very small screens */
-    }
-
-    h1{
-        margin-top: 20px;
-    }
-
-    .box {
-        height: 60px; /* Further adjust height of each box for very small screens */
-        width: 60px; /* Further adjust width of each box for very small screens */
-        font-size: 2rem; /* Further adjust font size of X and O for very small screens */
-    }
-
-    #msg {
-        font-size: 3rem; /* Further adjust font size of win/draw message for very small screens */
-    }
-
-    #reset-btn,
-    #new-btn {
-        font-size: 1.2rem; /* Adjust font size of buttons for very small screens */
-        padding: 0.5rem 1rem; /* Adjust padding of buttons for very small screens */
-    }
-}
