@@ -1,4 +1,4 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
 }
@@ -79,5 +79,129 @@ body{
 
 .change{
     color: green;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensure padding and border don't increase element size */
 }
+
+body {
+    background-color: #91E5F6;
+    text-align: center;
+    font-family: Arial, sans-serif; /* Specify a fallback font */
+    min-height: 100vh; /* Ensure body takes up at least the full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 80vh; /* Adjusted for better centering */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    width: 80%; /* Adjusted for better responsiveness */
+    max-width: 60vmin; /* Limit maximum size for very large screens */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.3);
+    font-size: 8vmin;
+    color: red;
+    background-color: #ffffc7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#reset-btn,
+#new-btn {
+    padding: 1rem 2rem; /* Improved padding for buttons */
+    font-size: 2vmin; /* Adjusted font size relative to viewport */
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+    margin-top: 2rem; /* Added margin for spacing */
+    cursor: pointer;
+}
+
+#msg {
+    color: gold;
+    font-size: 10vmin; /* Adjusted font size relative to viewport */
+    margin-top: 2rem; /* Added margin for spacing */
+}
+
+.msg-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem; /* Adjusted gap between elements */
+}
+
+.hide {
+    display: none;
+}
+
+.hide1 {
+    display: none;
+}
+
+.change {
+    color: green;
+}
+
+@media (max-width: 768px) {
+    .game {
+        max-width: 80vmin; /* Adjust maximum width for smaller screens */
+    }
+
+    .box {
+        height: 12vmin; /* Adjusted box size for smaller screens */
+        width: 12vmin;
+        font-size: 5vmin; /* Adjusted font size for smaller screens */
+    }
+
+    #msg {
+        font-size: 7vmin; /* Adjusted font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .game {
+        max-width: 90vmin; /* Adjust maximum width for very small screens */
+    }
+
+    .box {
+        height: 10vmin; /* Further reduced box size for very small screens */
+        width: 10vmin;
+        font-size: 4vmin; /* Further reduced font size for very small screens */
+    }
+
+    #msg {
+        font-size: 5vmin; /* Further reduced font size for very small screens */
+    }
+
+    #reset-btn,
+    #new-btn {
+        font-size: 3vmin; /* Adjusted button font size for very small screens */
+        padding: 0.5rem 1rem; /* Adjusted button padding for very small screens */
+    }
+}
+
 
