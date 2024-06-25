@@ -1,4 +1,4 @@
-/* *{
+ *{
     margin: 0;
     padding: 0;
 }
@@ -57,7 +57,7 @@ body{
 
 #msg{
     color: gold;
-    font-size: 15vmin;
+    font-size: 10vmin;
 }
 
 .msg-container{
@@ -79,127 +79,5 @@ body{
 
 .change{
     color: green;
-} */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: #91E5F6;
-    text-align: center;
-    font-family: Arial, sans-serif;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.container {
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.game {
-    width: 80%;
-    max-width: 60vmin;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    gap: 1.5vmin;
-    justify-items: center;
-    align-items: center;
-}
-
-.box {
-    height: 18vmin; /* Adjust box height */
-    width: 18vmin; /* Adjust box width */
-    border-radius: 1rem;
-    border: none;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
-    font-size: 8vmin;
-    color: red;
-    background-color: #ffffc7;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#reset-btn,
-#new-btn {
-    padding: 1rem 2rem;
-    font-size: 2vmin;
-    background-color: #191913;
-    color: #fff;
-    border-radius: 1rem;
-    border: none;
-    margin-top: 2rem;
-    cursor: pointer;
-}
-
-#msg {
-    color: gold;
-    font-size: 10vmin;
-    margin-top: 2rem;
-}
-
-.msg-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-.hide {
-    display: none;
-}
-
-.hide1 {
-    display: none;
-}
-
-.change {
-    color: green;
-}
-
-@media (max-width: 768px) {
-    .game {
-        max-width: 80vmin;
-    }
-
-    .box {
-        height: 12vmin; /* Adjust box height for smaller screens */
-        width: 12vmin; /* Adjust box width for smaller screens */
-        font-size: 5vmin; /* Adjust font size for smaller screens */
-    }
-
-    #msg {
-        font-size: 7vmin;
-    }
-}
-
-@media (max-width: 480px) {
-    .game {
-        max-width: 90vmin;
-    }
-
-    .box {
-        height: 10vmin; /* Further adjust box height for very small screens */
-        width: 10vmin; /* Further adjust box width for very small screens */
-        font-size: 4vmin; /* Further adjust font size for very small screens */
-    }
-
-    #msg {
-        font-size: 5vmin;
-    }
-
-    #reset-btn,
-    #new-btn {
-        font-size: 3vmin;
-        padding: 0.5rem 1rem;
-    }
-}
+} 
 
