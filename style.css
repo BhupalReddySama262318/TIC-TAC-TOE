@@ -37,7 +37,7 @@ h1{
     border: none;
     box-shadow: 0 0 1rem rgba(0,0,0,0.3);
     font-size: 8vmin;
-    color: red;
+    /* color: red; */
     background-color: #ffffc7;
 }
 
@@ -81,7 +81,12 @@ h1{
     display: none;
 }
 
-.change{
+.o-style {
     color: green;
-} 
+}
+
+.x-style {
+    color: red;
+}
+
 
