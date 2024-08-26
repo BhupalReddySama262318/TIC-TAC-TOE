@@ -40,7 +40,7 @@
 <h1>Installation</h1>
 <ol>
   <li>Clone the repository:<br>
-    <a href="https://github.com/BhupalReddySama262318/TIC-TAC-TOE.git" target="_blank">git clone https://github.com/yourusername/tic-tac-toe.git</a></li>
+    <a href="https://github.com/BhupalReddySama262318/TIC-TAC-TOE.git" target="_blank">git clone https://github.com/BhupalReddySama262318/TIC-TAC-TOE.git </a></li>
   <li>Navigate to the project directory:<br>
     <code>cd tic-tac-toe</code></li>
 </ol>
